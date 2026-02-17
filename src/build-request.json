@@ -1,0 +1,36 @@
+{
+  "kind": "build_request",
+  "title": "Update product text to include Raza name",
+  "projectName": "Meerut Tennis Bats",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "text": "Update the user-facing product text so that the phrase \"premium raza cricket bat\" includes the Raza name immediately after it (i.e., append the Raza name right after the words \"premium raza cricket bat\" wherever this exact text appears in the UI).",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "msg-1"
+        ],
+        "quotes": [
+          "add raza name after premium raza cricket bat"
+        ]
+      },
+      "acceptanceCriteria": [
+        "When a user navigates the site, any occurrence of the exact text \"premium raza cricket bat\" in visible UI copy now shows the Raza name appended immediately after it.",
+        "No other unrelated product copy is changed."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not edit files under frontend/src/components/ui or any paths listed as immutable in SYSTEM_CONTEXT."
+  ],
+  "nonGoals": [
+    "Adding new products, product pages, or changing pricing/order logic.",
+    "Backend changes or state migrations."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": []
+  }
+}

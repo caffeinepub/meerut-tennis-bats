@@ -1,0 +1,29 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 3,
+  "summary": "New project",
+  "architectural_notes": [],
+  "known_issues": [],
+  "isFixRequest": false,
+  "existing_features": [
+    {
+      "id": "feature-update-the-user-facing-product-text-so-that-the-phrase-premium-raza-cricket-bat-includes-the-raza-name-immediately-after-it-i-e-append-the-raza-name-right-after-the-words-premium-raza-cricket-bat-wherever-this-exact-text-appears-in-the-ui",
+      "title": "Update the user-facing product text so that the phrase \"premium raza cricket bat\" includes the Raza name immediately after it (i.e., append the Raza name right after the words \"premium raza cricket bat\" wherever this exact text appears in the UI).",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Update product text to add the name \"raza\" after \"premium raza cricket bat\"",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "projectName": "Meerut Tennis Bats",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}

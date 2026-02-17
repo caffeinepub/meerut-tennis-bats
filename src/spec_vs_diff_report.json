@@ -1,0 +1,45 @@
+{
+  "kind": "spec_vs_diff_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-17T10:11:08.086Z",
+  "summary": "The diff does not implement REQ-1 as specified. It changes Hero copy to \"Premium Raza Cricket Tennis Bats\" rather than appending the Raza name immediately after the exact phrase \"premium raza cricket bat\" wherever it appears. The diff also includes unrelated metadata/documentation/state updates not requested by the BuildRequest.",
+  "missing_requirements": [
+    {
+      "id": "REQ-1",
+      "requirement": "Update the user-facing product text so that the phrase \"premium raza cricket bat\" includes the Raza name immediately after it (append the Raza name right after the words \"premium raza cricket bat\" wherever this exact text appears in the UI).",
+      "reason": "No change in the diff shows the exact UI phrase \"premium raza cricket bat\" being updated to append the Raza name; instead, Hero text is changed to a different phrase (\"Premium Raza Cricket Tennis Bats\"), which does not satisfy the requirement targeting the exact phrase.",
+      "evidence": [
+        "frontend/src/components/Hero.tsx"
+      ]
+    }
+  ],
+  "hallucinated_features": [
+    {
+      "description": "Changed Hero headline to \"Premium Raza Cricket Tennis Bats\" (introducing/altering product wording rather than updating the exact phrase \"premium raza cricket bat\" to append a name).",
+      "reason": "The BuildRequest only asks to append the Raza name immediately after the exact text \"premium raza cricket bat\" wherever it appears; it does not request changing the product type/phrase to \"Cricket Tennis Bats\".",
+      "evidence": [
+        "frontend/src/components/Hero.tsx"
+      ]
+    },
+    {
+      "description": "Updated repository metadata/summary files describing many frontend files and business details.",
+      "reason": "Not requested by the BuildRequest; appears unrelated to the targeted text change requirement.",
+      "evidence": [
+        "frontend-file-summaries.txt"
+      ]
+    },
+    {
+      "description": "Updated project tracking/state file to add new_feature_requests entries and statuses.",
+      "reason": "Not requested by the BuildRequest; represents process/state tracking rather than implementing the UI text change.",
+      "evidence": [
+        "project_state.json"
+      ]
+    }
+  ],
+  "confidence": 0.74,
+  "changed_files": [
+    "frontend-file-summaries.txt",
+    "frontend/src/components/Hero.tsx",
+    "project_state.json"
+  ]
+}

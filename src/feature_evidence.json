@@ -1,0 +1,24 @@
+{
+  "kind": "feature_evidence_report",
+  "features": [
+    {
+      "featureId": "feature-update-the-user-facing-product-text-so-that-the-phrase-premium-raza-cricket-bat-includes-the-raza-name-immediately-after-it-i-e-append-the-raza-name-right-after-the-words-premium-raza-cricket-bat-wherever-this-exact-text-appears-in-the-ui",
+      "featureTitle": "Update the user-facing product text so that the phrase \"premium raza cricket bat\" includes the Raza name immediately after it (i.e., append the Raza name right after the words \"premium raza cricket bat\" wherever this exact text appears in the UI).",
+      "files": [
+        "frontend/src/components/Hero.tsx"
+      ],
+      "components": [
+        "authorization@4.0.0",
+        "core-infrastructure@1.0.2",
+        "shadcn-ui@1.0.0",
+        "build-template-react@1.0.0",
+        "initial-app@1.0.0",
+        "github-export-icp-cli@1.0.0"
+      ],
+      "testIds": [
+        "REQ-1"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

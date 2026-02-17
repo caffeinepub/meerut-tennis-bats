@@ -1,0 +1,42 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Update product text to include Raza name",
+  "requirements": [
+    {
+      "id": "REQ-1",
+      "summary": "Append the Raza name immediately after any exact visible UI occurrence of the phrase \"premium raza cricket bat\" without changing any other product copy.",
+      "acceptanceCriteria": [
+        "When a user navigates the site, any occurrence of the exact text \"premium raza cricket bat\" in visible UI copy now shows the Raza name appended immediately after it.",
+        "No other unrelated product copy is changed."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/utils/productCopy.ts",
+          "operation": "create",
+          "description": "Add a small utility that transforms only the exact phrase \"premium raza cricket bat\" by appending the Raza name immediately after it, leaving all other text unchanged."
+        },
+        {
+          "path": "frontend/src/components/Products.tsx",
+          "operation": "modify",
+          "description": "Wherever the exact UI copy \"premium raza cricket bat\" appears in this component, route it through the new product copy utility (or directly update that exact phrase) so the Raza name is appended immediately after the phrase, with no other copy changes."
+        },
+        {
+          "path": "frontend/src/components/Hero.tsx",
+          "operation": "modify",
+          "description": "Wherever the exact UI copy \"premium raza cricket bat\" appears in this component, update it so the Raza name is appended immediately after the phrase, with no other copy changes."
+        },
+        {
+          "path": "frontend/src/components/Speciality.tsx",
+          "operation": "modify",
+          "description": "Wherever the exact UI copy \"premium raza cricket bat\" appears in this component, update it so the Raza name is appended immediately after the phrase, with no other copy changes."
+        },
+        {
+          "path": "frontend/src/components/OrderDialog.tsx",
+          "operation": "modify",
+          "description": "Wherever the exact UI copy \"premium raza cricket bat\" appears in this component (including dialog descriptions/success views), update it so the Raza name is appended immediately after the phrase, with no other copy changes."
+        }
+      ]
+    }
+  ]
+}

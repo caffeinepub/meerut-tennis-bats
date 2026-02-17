@@ -1,0 +1,18 @@
+{
+  "frontend/src/config/business.ts": "Centralized business configuration containing contact phone number (819303306), Instagram handle, and business details with verification documentation comment block for go-live pre-flight checks.",
+  "frontend/src/hooks/useQueries.ts": "React Query hooks for managing user profiles and orders, including fetching caller profile, saving profile, creating orders, and listing orders.",
+  "frontend/src/components/Header.tsx": "Sticky header component displaying logo, business name, phone contact button, and Instagram link.",
+  "frontend/src/components/Hero.tsx": "Hero section with background image, business tagline \"Premium Raza Cricket Tennis Bats\", and prominent call-to-action buttons for ordering and viewing speciality.",
+  "frontend/src/components/Products.tsx": "Products section showcasing four key features of the cricket tennis bats with card-based layout.",
+  "frontend/src/components/Speciality.tsx": "Speciality section highlighting the custom bat grip customization service with three detailed feature cards.",
+  "frontend/src/components/Contact.tsx": "Contact section displaying phone number, location (Meerut), and Instagram handle in a three-column card layout.",
+  "frontend/src/components/Footer.tsx": "Footer component with business info, contact details, social links, and required caffeine.ai attribution with UTM tracking.",
+  "frontend/src/components/OrderDialog.tsx": "Modal dialog for placing bat orders with form fields for bat details, custom grip preferences, delivery address, and notes, with success confirmation state.",
+  "frontend/src/components/ProfileSetupDialog.tsx": "Modal dialog for first-time user profile setup, collecting name, email, and phone number before allowing orders.",
+  "frontend/src/components/LoginButton.tsx": "Authentication button component that handles login/logout with Internet Identity and clears query cache on logout.",
+  "frontend/src/App.tsx": "Main application component orchestrating all sections, managing order dialog state, authentication flow, and profile setup with floating action buttons.",
+  "frontend/src/index.css": "Global styles with OKLCH color system using warm orange/red primary colors (avoiding blue/purple) for sports brand aesthetic in both light and dark modes.",
+  "frontend/tailwind.config.js": "Tailwind configuration with custom color tokens, Inter font family, custom shadows, and extended design system for consistent sports brand styling.",
+  "frontend/GO_LIVE.md": "Comprehensive go-live runbook with explicit pre-flight checklist including business info verification against config file, deployment steps, production URL recording section, smoke test execution requirements, and rollback procedures for promoting approved draft v3 to production without functional code changes.",
+  "frontend/SMOKE_CHECK_PRODUCTION.md": "Detailed production smoke test checklist with structured results capture sections for each test case including PASS/FAIL status, notes/issues fields, screenshot attachment points, error message documentation, severity assessment, evidence logging, and final sign-off with overall test result and production URL recording."
+}
